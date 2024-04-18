@@ -55,7 +55,7 @@
  * Example:
  *
  * <code><pre>
-var client = new Paho.MQTT.Client(location.hostname, Number(location.port), "clientId");
+var client = new Paho.Client(location.hostname, Number(location.port), "clientId");
 client.onConnectionLost = onConnectionLost;
 client.onMessageArrived = onMessageArrived;
 client.connect({onSuccess:onConnect});
@@ -64,7 +64,7 @@ function onConnect() {
   // Once a connection has been made, make a subscription and send a message.
   console.log("onConnect");
   client.subscribe("/World");
-  var message = new Paho.MQTT.Message("Hello");
+  var message = new Paho.Message("Hello");
   message.destinationName = "/World";
   client.send(message);
 };
