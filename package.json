@@ -7,7 +7,7 @@
 		"type": "git",
 		"url": "https://github.com/eclipse/paho.mqtt.javascript.git"
 	},
-	"license": "EPL-1.0",
+	"license": "EPL-2.0",
 	"devDependencies": {
 		"dotenv": "^4.0.0",
 		"eslint": "^4.19.1",
